@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sorts Mill Goudy', serif;
+    background-color: rgb(232, 255, 247)
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+
+#header{
+    display: flex;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+#header-img{
+    flex:1;
+}
+#header-img img{
+    margin-top:0.6em;
+    max-width: 60%;
+    height: auto;
+}
+#navbar{
+    margin: 10px;
+    list-style: none;
+    flex:1;
+}
+#navbar li{
+    display: inline-block;
+    margin-left: 4em;
+    font-size: 1.3em;
+}
+#navbar li a:link,
+#navbar li a:visited{
+    text-decoration: none;
+    color:black;
+}   
+
+#navbar li a:hover,
+#navbar li a:active{
+    text-shadow: 1px 1px 1px rgb(19, 181, 230);
+    border-bottom: 2px solid rgb(110, 51, 51);
+    -webkit-transition: border-bottom;
+    transition: border-bottom 0.8s;
+}
+
+/* Form Element */
+
+#form{
+    text-align: center;
+    margin: 5em;
+}
+#form-email,input[type=email] ::placeholder{
+    margin-top: 1em;
+    padding: 0.6em 4em;
+    border-radius: 0.8em;
+    border:1px solid blue;
+    overflow: visible;
+}
+#form a{
+    padding: 0.5em;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 2em;
+    color:black;
+    font-weight: bold; 
+}
+#btn:hover,
+#btn:active{
+    background: rgb(140, 223, 44);
+    -webkit-transition: background;
+    transition: background 0.4s;
+    box-shadow: 0 0 20px #d48383;
+}
+
+/* Features Section*/
+
+.container{
+    margin: 5% 15%;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+}
+.feature-description{
+    display: flex;
+    margin: 20px;
+}
+.icon-1,.icon-2,.icon-3{
+    margin-right: 2em;
+    color:rgb(132, 167, 5);
+}
+
+/* Video Section */
+
+#video{
+    margin: 2em;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 0 30px #d48383;
+}
+/* Prices Plan Sectoin*/
+
+.prices-section{
+    display: flex;
+}
+.prices{
+    flex:1;
+    border:1px solid black;
+    border-width: 6px;
+    margin:10px;
+    border-radius: 10%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.prices p{
+    margin: 15px;
+}
+.prices a:link,
+.prices a:visited{
+    padding:0.4em 1.2em;
+    color:rgb(63, 82, 83);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 4px transparent grey;
+    justify-items: center;
+    background-color: rgb(204, 238, 13);
+    border-radius: 20px;
+}
+.prices a:hover,
+.prices a:active{
+    background-color: rgb(30, 223, 149);
+    -webkit-transition: background-color;
+    box-shadow: 0 0 20px #d48383;
+    transition: background-color box-shadow 0.6s;
+}
+.price {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+h3{
+    padding-top: 10px;
+    height: 45px;
+    background-color:rgb(184, 184, 184);
+}
+
+/* Footer Section*/
+.footer{
+    font-size: 20px;
+    margin:20px;
+    display: flex;
+    justify-content: center; 
+}
+.footer-section p{
+    text-align: center;
+}
+
+.footer p{
+    flex:1;
+}
+
+@media screen and (max-width: 600px) {
+    .prices-section {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .navbar li {
+      display: inline-block;
+    }
+  }  
